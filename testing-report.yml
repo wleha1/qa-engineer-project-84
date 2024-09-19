@@ -52,7 +52,7 @@
   status: fail
 
 - summary: |
-    Проверка входа с браузера Opera GX
+    Кроссбраузерность сайта
   status: pass
 
 - summary: |

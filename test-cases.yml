@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
-    -
+    - none
   steps:
     - Нажать кнопку Корзина
     - Нажать кнопку Магазин
@@ -82,10 +82,7 @@
   steps: |
     - Нажимаем кнопку "Категория"
     - Выбираем из списка нужную категорию "beauty"
-    - Повторить с категориями:
-    fragrances
-    furniture
-    groceries
+    - Повторить с категориями: fragrances, furniture, groceries
   expected-result: |
     Выбирая нужную категорию, отображаются товары соответствующие ей
 
@@ -142,7 +139,7 @@
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
-    -
+    - none
   steps: |
     - Нажать на икноку любого товара
   expected-result: |
@@ -171,7 +168,7 @@
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
-    Browser = Chrome Version 111.0.5563.65 (Official Build) (64-bit)
+    Браузер = Google Chrome Версия 119.0.6045.124 (Официальная сборка), (64 бит)
     Товар = "Essence Mascara Lash Princess"
   steps: |
     - Найти в поиске "Essence Mascara Lash Princess"
@@ -191,7 +188,7 @@
   prerequisites: |
     Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
-    -
+    - none
   steps: |
     - Нажать кнопку "Language"
     - Выбрать язык "Russian"
@@ -212,18 +209,39 @@
   expected-result: |
     Не удалось ввести отрицательное значение в фильтр цен, фильрация не срабатывает
 
-- summary: |
-    Проверка входа с браузера Opera GX
+- summary: | 
+    Кроссбраузерность сайта
   requirement: |
-    Сайт должен корректно открываться и функционировать с разных браузеров
+    Сайт должен быть протестирован на совместимость с последними версиями браузеров
   prerequisites: |
-    Наличее браузера Opera GX
+    Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
-    Browser = Opera GX LVL 4 (core: 95.0.4635.74)
+    Браузер = Firefox 119.0.1 (64-разрядный)
+    Браузер = Google Chrome Версия 119.0.6045.124 (Официальная сборка), (64 бит)
   steps:
-    - Открыть https://hexlet-products-store.vercel.app/
+    - Открыть в Firefox https://hexlet-products-store.vercel.app/
+    - Открыть в Chrome https://hexlet-products-store.vercel.app/
+    - Сравнить отображение шрифтов
+      На превью
+      В карточке товара
+      В корзине
+    - Интерактивные элементы на главной странице
+      Работу выпадающих меню
+      Чекбоксы 
+      Поля ввода
+      Элементы навигации
+      Кнопки
+    - Зайти на страницу товара сравнить
+      Отображение кнопок
+      Разделителей
+    - Корзина
+      Добавить несколько товаров в корзину
+      Проверить отображение количества товаров у значка корзины в шапке
+    - Перейти в корзину сравнить
+      Отображение всех кнопок
+      Списка товаров
   expected-result: |
-    Корректно отображается сайт в браузере Opera GX
+    Элементы сайта отображаются корректно в разных браузерах, на функционал не влияет, дизайн сайта не ломает
 
 - summary: |
     Проверка корректного функционирования мобильной версии сайта
@@ -252,7 +270,7 @@
   prerequisites:
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
-    empty
+    - none
   steps:
     - Перейти в корзину
     - Нажать "Продолжить покупки" 

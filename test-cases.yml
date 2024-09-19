@@ -79,7 +79,7 @@
     Категория = fragrances
     Категория = furniture
     Категория = groceries
-  steps: |
+  steps:
     - Нажимаем кнопку "Категория"
     - Выбираем из списка нужную категорию "beauty"
     - Повторить с категориями: fragrances, furniture, groceries
@@ -96,7 +96,7 @@
   test-data: |
     From = 100
     To = 200
-  steps: |
+  steps:
     - Вводим в поле "From" значение 100
     - Вводим в поле "To" значениме 200
   expected-result: |
@@ -111,7 +111,7 @@
     Товар есть в наличии
   test-data: |
     Brand = Calvin Klein
-  steps: |
+  steps:
     - Установить флажок "Calvin Klein"
   expected-result: |
     Сайт отображает товары соответствующие этому бренду
@@ -126,7 +126,7 @@
   test-data: |
     Brand = Calvin Klein
     Brand = Dolce & Gabbana
-  steps: |
+  steps:
     - Установить флажок "Calvin Klein"
     - Установить флажок "Dolce & Gabbana"
   expected-result: |
@@ -140,7 +140,7 @@
     Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
     - none
-  steps: |
+  steps:
     - Нажать на икноку любого товара
   expected-result: |
     Сайт отображает подробную информацию об этом товаре
@@ -153,7 +153,7 @@
     Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
     Товар = "Essence Mascara Lash Princess"
-  steps: |
+  steps:
     - Найти в поиске "Essence Mascara Lash Princess"
     - Нажать на кнопку "В корзину"
     - Перейти в корзину
@@ -170,7 +170,7 @@
   test-data: |
     Браузер = Google Chrome Версия 119.0.6045.124 (Официальная сборка), (64 бит)
     Товар = "Essence Mascara Lash Princess"
-  steps: |
+  steps:
     - Найти в поиске "Essence Mascara Lash Princess"
     - Нажать на кнопку "В корзину"
     - Перейти в корзину
@@ -189,7 +189,7 @@
     Открыта главная страница https://hexlet-products-store.vercel.app/
   test-data: |
     - none
-  steps: |
+  steps:
     - Нажать кнопку "Language"
     - Выбрать язык "Russian"
   expected-result: |
@@ -271,7 +271,7 @@
     Открыта страница магазина https://hexlet-products-store.vercel.app/
   test-data: |
     - none
-  steps:
+  steps: 
     - Перейти в корзину
     - Нажать "Продолжить покупки" 
   expected-result: |

@@ -1,4 +1,5 @@
 ---
+test-cases:
 - summary: |
     Проверка на SPA
   status: fail

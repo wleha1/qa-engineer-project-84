@@ -82,7 +82,7 @@
   steps:
     - Нажимаем кнопку "Категория"
     - Выбираем из списка нужную категорию "beauty"
-    - Повторить с категориями: fragrances, furniture, groceries
+    - Повторить с категориями fragrances, furniture, groceries
   expected-result: |
     Выбирая нужную категорию, отображаются товары соответствующие ей
 
